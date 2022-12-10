@@ -3,6 +3,10 @@
 from the_bank import Bank
 from account import Account
 
+print("*************************************************")
+print("Account testing and fixing")
+print("*************************************************")
+
 bank = Bank()
 my_account = Account("my_account", zip_arg1="arg1", string2="arg2", string3="arg3")
 b_account = Account("b_account", b_string1="arg1", string2="arg2", string3="arg3")
@@ -71,5 +75,9 @@ valuen_i_f_account.value = "hi"
 print("fix_account on valuen_i_f_account", end='\t')
 print(bank.fix_account("valuen_i_f_account"))
 
-print("accounts that are not corrupt: ")
-#bank.debug_print_account_list()
+print("*************************************************")
+print("Transfers")
+print("*************************************************")
+
+t1_account = Account("t1_account", address="123 testing", value=2000)
+t2_account = Account("t2_account", address="234 tested", value=1000)
